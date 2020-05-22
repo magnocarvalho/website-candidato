@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "poletize-beta"
+  },
+  "targets": {
+    "poletize-beta": {
+      "hosting": {
+        "landpage": [
+          "poletize-beta"
+        ]
+      }
+    }
   }
 }
