@@ -1,42 +1,57 @@
-<nav class="topnav">
+<!-- <nav class="topnav">
   <ul>
-    <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/whatsapp.png"></a></li>
-    <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/instagram.png"></a></li>
-    <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/twitter.png"></a></li>
-    <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/facebook.png"></a></li>
+    <div class="container">
+      <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/whatsapp.png"></a></li>
+      <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/instagram.png"></a></li>
+      <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/twitter.png"></a></li>
+      <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/facebook.png"></a></li>
+    </div>
   </ul>
-</nav>
-<div class="navdiv">
-  <h1></h1>
-</div>
-<nav class="topnav2">
-  <ul>
-    <li><a href="#contato">
-        <h5>Contato</h5>
-      </a></li>
-    <li><a href="#enquete">
-        <h5>Enquete</h5>
-      </a></li>
-    <li><a href="#fala-cidadao">
-        <h5>Fala Cidadão</h5>
-      </a></li>
-    <li><a href="#atuacao">
-        <h5>Atuação</h5>
-      </a></li>
-    <li><a href="#biografia">
-        <h5>Biografia</h5>
-      </a></li>
-    <li><a class="active" href="#home">
-        <h5>Home</h5>
-      </a></li>
-    <li><img id="logo" src="/assets/images/logo.png"></li>
-  </ul>
-</nav>
-<section class="alex-main">
+</nav> -->
+<app-navbar></app-navbar>
+<section class="container-fluid" id="header-links">
+  <div class="container-xl">
+    <div class="col-xl-12">
+      <div class="row">
+        <div class="col-sm-12 col-xl-3">
+          <img id="logo" src="/assets/images/logo.png">
+        </div>
+        <div class="col-sm-12 col-xl-9">
+          <ul id="links-header">
+            <li><a href="#contato">
+                <h5>Contato</h5>
+              </a></li>
+            <li><a href="#enquete">
+                <h5>Enquete</h5>
+              </a></li>
+            <li><a href="#fala-cidadao">
+                <h5>Fala Cidadão</h5>
+              </a></li>
+            <li><a href="#atuacao">
+                <h5>Atuação</h5>
+              </a></li>
+            <li><a href="#biografia">
+                <h5>Biografia</h5>
+              </a></li>
+            <li><a class="active" href="#home">
+                <h5>Home</h5>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="home" class="controle-background">
   <div class="container">
-    <img class="redano10" src="/assets/images/redano10.png" alt="Alex Redano">
-    <img class="redano-topo" src="/assets/images/alex-topo.png" alt="Alex Redano">
-
+    <div class="row align-items-center">
+      <div class="col-xl-6 col-sm-6">
+        <img class="alex-topo" src="/assets/images/alex-topo.png" alt="Alex Redano">
+      </div>
+      <div class="col-xl-6 col-sm-6">
+        <img class="alex-hash" src="/assets/images/redano10.png" alt="Alex Redano">
+      </div>
+    </div>
   </div>
 </section>
 <section class="biografia" id="biografia">
@@ -53,7 +68,7 @@
   </div>
   <img class="leia" src="/assets/images/leia-mais.png" alt="Leia Mais">
 </section>
-<section class="atuacao" id="atuacao">
+<section>
   <div class="container" id="rows">
     <div class="row">
       <div class="col-md">
@@ -102,7 +117,7 @@
   </div>
   <div class="barra2"></div>
 </section>
-<section class="fala-cidadao">
+<section>
   <div class="container">
     <div class="d-flex bd-highlight">
       <div class="p-2 w-100 bd-highlight">
@@ -194,10 +209,19 @@
   </footer>
   <nav class="topnav">
     <ul>
-      <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/whatsapp.png"></a></li>
-      <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/twitter.png"></a></li>
-      <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/facebook.png"></a></li>
+      <li><a class="medialink" target="_blank" href="https://www.instagram.com/alex.redano/"><img class="media"
+            src="/assets/images/nav/whatsapp.png"></a></li>
+      <li><a class="medialink" target="_blank" href="https://www.instagram.com/alex.redano/"><img class="media"
+            src="/assets/images/nav/instagram.png"></a></li>
+
+      <li><a class="medialink" target="_blank" href="#"><img class="media" src="/assets/images/nav/twitter.png"></a>
+      </li>
+      <li><a class="medialink" target="_blank" href="https://www.facebook.com/alex.redano/">
+          <i class="fa fa-facebook" aria-hidden="true">
+          </i>
+        </a>
+      </li>
     </ul>
-    <h5 class="rights">2020 Todos os direitos reservados l Desenvolvido por Polezite</h5>
+    <h5 class="rights">2020 Todos os direitos reservados | Desenvolvido por Polezite</h5>
   </nav>
 </section>

@@ -11,14 +11,7 @@
 	object-fit: cover;
 	padding: 10px;
 }
-// .topnav2 ul {
-// 	list-style-type: none;
-// 	margin-top: -5px;
-// 	padding: 10px;
-// 	padding-right: 120px;
-// 	overflow: hidden;
-// 	background-color: rgb(255, 255, 255);
-// }
+
 #logo {
 	width: 100%;
 	max-width: 350px;
@@ -34,6 +27,24 @@
 }
 .topnav2 {
 	margin-left: -50px;
+}
+#header-links {
+	display: block;
+	height: 120px;
+}
+
+.controle-background {
+	background-image: url("/assets/images/fundo1.png");
+  background-size: contain;
+  background-position: unset;
+  background-repeat: round;
+  height: 100vh;
+  max-height: 854px;
+  display: block;
+  img.alex-topo {
+    height: 93vh;
+    max-height: 814px;
+  }
 }
 #links-header {
 	width: 100%;
@@ -94,14 +105,7 @@ li a:hover {
 	object-fit: cover;
 	margin-left: -500px;
 }
-.controle-background {
-	background-image: url("/assets/images/fundo1.png");
-  background-size: contain;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: block;
-}
+
 .redano10 {
 	position: absolute;
 	margin-top: 200px;
@@ -114,24 +118,26 @@ li a:hover {
 	margin-left: -100px;
 	width: 585px;
 }
-.biografia h1 {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 55px;
-	font-weight: bold;
-	color: rgb(45, 7, 105);
-	margin-left: 00px;
-	float: left;
-	margin-top: -525px;
+.biografia {
+	h1 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 55px;
+		font-weight: bold;
+		color: rgb(45, 7, 105);
+		margin-left: 00px;
+		float: left;
+		margin-top: -525px;
+	}
+	p {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 25px;
+		color: grey;
+		margin-left: 00px;
+		float: left;
+		margin-top: -450px;
+	}
 }
-.biografia p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 25px;
-	color: grey;
-	margin-left: 00px;
-	float: left;
-	margin-top: -450px;
-}
-.familia {
+.biografia .familia {
 	margin-left: 400px;
 	margin-bottom: -30px;
 	width: 900px;
@@ -140,9 +146,9 @@ li a:hover {
 	margin-top: -300px;
 	margin-left: 275px;
 }
-.row {
-	float: left;
-}
+// .row {
+// 	float: left;
+// }
 .rowimage,
 #emenda {
 	margin-left: -290px;
