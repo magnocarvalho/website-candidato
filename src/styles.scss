@@ -1,264 +1,284 @@
 /* You can add global styles to this file, and also import other style files */
-.topnav {
-}
+
 .topnav ul {
-  list-style-type: none;
-  margin-top: -10px;
-  margin-bottom: -10px;
-  margin-right: auto;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(45, 7, 105);
-  object-fit: cover;
-  padding: 10px;
+	list-style-type: none;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	margin-right: auto;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(45, 7, 105);
+	object-fit: cover;
+	padding: 10px;
 }
-.topnav2 ul {
-  list-style-type: none;
-  margin-top: -5px;
-  padding: 10px;
-  padding-right: 120px;
-  overflow: hidden;
-  background-color: rgb(255, 255, 255);
-}
+// .topnav2 ul {
+// 	list-style-type: none;
+// 	margin-top: -5px;
+// 	padding: 10px;
+// 	padding-right: 120px;
+// 	overflow: hidden;
+// 	background-color: rgb(255, 255, 255);
+// }
 #logo {
-  float: left;
-  width: 350px;
-  margin-left: -525px;
-  margin-top: 10px;
+	width: 100%;
+	max-width: 350px;
+	// margin-left: -525px;
+	margin-top: 10px;
 }
 .topnav li {
-  float: right;
+	float: right;
 }
 .navdiv {
-  background-color: rgb(255, 123, 0);
-  padding: 8px 8px;
+	background-color: rgb(255, 123, 0);
+	padding: 8px 8px;
 }
 .topnav2 {
-  margin-left: -50px;
+	margin-left: -50px;
 }
-.topnav2 li {
-  margin-top: 10px;
-  float: right;
+#links-header {
+	width: 100%;
+	list-style-type: none;
+	margin-top: 5px;
+	padding: 10px;
+	padding-right: 0;
+	overflow: hidden;
+	background-color: rgb(255, 255, 255);
+	li {
+		margin-top: 10px;
+		float: right;
+		a {
+			display: block;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			border-left: 1px solid #fff;
+		}
+	}
 }
 h5 {
-  font-family: Arial;
-  font-size: 25px;
-  color: #111;
-  font-weight: lighter;
+	font-family: Arial;
+	font-size: 25px;
+	color: #111;
+	font-weight: lighter;
 }
 .media {
-  height: 25px;
-  width: 25px;
-  border-left: 3px wheat;
+	height: 25px;
+	width: 25px;
+	border-left: 3px wheat;
 }
 
 li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-left: 1px solid #fff;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: rgb(216, 210, 210, 0.6);
+	background-color: rgb(216, 210, 210, 0.6);
 }
 
 .body {
-  background-color: aliceblue;
-  height: 920px;
+	background-color: aliceblue;
+	height: 920px;
 }
 #alex-main .fundo1 {
-  max-width: 100;
-  max-height: auto;
+	max-width: 100;
+	max-height: auto;
 
-  position: relative;
-  object-fit: cover;
-  margin-left: -500px;
+	position: relative;
+	object-fit: cover;
+	margin-left: -500px;
 }
-.alex-main {
-  background-image: url("/src/assets/images/FUNDO\ ALEX.png");
-  background-size: cover;
+.controle-background {
+	background-image: url("/assets/images/fundo1.png");
+  background-size: contain;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat;
   height: 100vh;
+  display: block;
 }
 .redano10 {
-  position: absolute;
-  margin-top: 200px;
-  float: right;
-  margin-left: 500px;
+	position: absolute;
+	margin-top: 200px;
+	float: right;
+	margin-left: 500px;
 }
 .redano-topo {
-  position: absolute;
-  margin-top: -40px;
-  margin-left: -100px;
-  width: 585px;
+	position: absolute;
+	margin-top: -40px;
+	margin-left: -100px;
+	width: 585px;
 }
 .biografia h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 55px;
-  font-weight: bold;
-  color: rgb(45, 7, 105);
-  margin-left: 00px;
-  float: left;
-  margin-top: -525px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 55px;
+	font-weight: bold;
+	color: rgb(45, 7, 105);
+	margin-left: 00px;
+	float: left;
+	margin-top: -525px;
 }
 .biografia p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 25px;
-  color: grey;
-  margin-left: 00px;
-  float: left;
-  margin-top: -450px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 25px;
+	color: grey;
+	margin-left: 00px;
+	float: left;
+	margin-top: -450px;
 }
 .familia {
-  margin-left: 400px;
-  margin-bottom: -30px;
-  width: 900px;
+	margin-left: 400px;
+	margin-bottom: -30px;
+	width: 900px;
 }
 .leia {
-  margin-top: -300px;
-  margin-left: 275px;
+	margin-top: -300px;
+	margin-left: 275px;
 }
 .row {
-  float: left;
+	float: left;
 }
 .rowimage,
 #emenda {
-  margin-left: -290px;
-  object-fit: cover;
-  width: 55px;
+	margin-left: -290px;
+	object-fit: cover;
+	width: 55px;
 }
 .rowimage {
-  position: relative;
-  margin-left: -23px;
-  height: 283px;
+	position: relative;
+	margin-left: -23px;
+	height: 283px;
 }
 .rowimage1 {
-  position: relative;
-  margin-left: -24px;
-  width: 553px;
+	position: relative;
+	margin-left: -24px;
+	width: 553px;
 }
 
 .rowicone1 {
-  position: absolute;
-  margin-top: -250px;
-  margin-left: 75px;
-  float: center;
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 75px;
+	float: center;
 }
 .rowicone2 {
-  position: absolute;
-  margin-top: -250px;
-  margin-left: 75px;
-  text-align: justify;
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 75px;
+	text-align: justify;
 }
 .rowicone3 {
-  position: absolute;
-  margin-top: -250px;
-  margin-left: 75px;
+	position: absolute;
+	margin-top: -250px;
+	margin-left: 75px;
 }
 h2 {
-  font-family: Helvetica;
-  color: white;
-  margin-top: -100px;
-  margin-left: 13%;
-  position: absolute;
-  font-size: 20px;
+	font-family: Helvetica;
+	color: white;
+	margin-top: -100px;
+	margin-left: 13%;
+	position: absolute;
+	font-size: 20px;
 }
 .podcast {
-  margin-left: 250px;
-  margin-bottom: -500px;
+	margin-left: 250px;
+	margin-bottom: -500px;
 }
 .notebook {
-  margin-left: 500px;
+	margin-left: 500px;
 }
 .barra1 {
-  background-color: rgb(255, 123, 0);
-  padding: 65px;
-  margin-right: 2%;
-  border-radius: 00px 90px 90px 00px;
-  margin-bottom: 5px;
+	background-color: rgb(255, 123, 0);
+	padding: 65px;
+	margin-right: 2%;
+	border-radius: 00px 90px 90px 00px;
+	margin-bottom: 5px;
 }
 .barra2 {
-  padding: 35px;
-  background-color: rgb(45, 7, 105);
-  margin-left: 60%;
-  border-radius: 90px 00px 00px 90px;
+	padding: 35px;
+	background-color: rgb(45, 7, 105);
+	margin-left: 60%;
+	border-radius: 90px 00px 00px 90px;
 }
 .barra1 #logo-bar {
-  margin-top: -5px;
+	margin-top: -5px;
 }
 .logos {
-  padding-left: 50px;
-  float: center;
+	padding-left: 50px;
+	float: center;
 }
 .celular {
-  float: right;
-  margin-right: 45%;
-  margin-top: 10%;
-  width: 500px;
+	float: right;
+	margin-right: 45%;
+	margin-top: 10%;
+	width: 500px;
 }
 .header1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 65px;
-  font-weight: bold;
-  position: absolute;
-  color: rgb(45, 7, 105);
-  margin-left: -15%;
-  margin-top: -5%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 65px;
+	font-weight: bold;
+	position: absolute;
+	color: rgb(45, 7, 105);
+	margin-left: -15%;
+	margin-top: -5%;
 }
 .header2 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 65px;
-  font-weight: bold;
-  position: absolute;
-  color: rgb(255, 123, 0);
-  margin-left: -15%;
-  margin-top: -1%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 65px;
+	font-weight: bold;
+	position: absolute;
+	color: rgb(255, 123, 0);
+	margin-left: -15%;
+	margin-top: -1%;
 }
 .text1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
-  color: black;
-  margin-top: 22%;
-  margin-left: -80%;
-  margin-right: -60%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: black;
+	margin-top: 22%;
+	margin-left: -80%;
+	margin-right: -60%;
 }
 .icone-fala {
-  margin-left: 80%;
+	margin-left: 80%;
 }
 .clique {
-  margin-top: 200%;
-  margin-left: -230%;
+	margin-top: 200%;
+	margin-left: -230%;
 }
 #form {
-  float: right;
+	float: right;
 }
 #submit {
-  color: rgb(45, 7, 105);
+	color: rgb(45, 7, 105);
 }
 .footer0 ul {
-  list-style-type: none;
-  margin-top: -5px;
-  padding: 10px;
-  padding-right: 120px;
-  overflow: hidden;
-  background-color: rgb(45, 7, 105);
+	list-style-type: none;
+	margin-top: -5px;
+	padding: 10px;
+	padding-right: 120px;
+	overflow: hidden;
+	background-color: rgb(45, 7, 105);
 }
 
 .footer0 {
-  margin-left: -50px;
+	margin-left: -50px;
 }
 .footer0 li {
-  margin-top: 10px;
-  float: right;
+	margin-top: 10px;
+	float: right;
 }
 .footer0 h5 {
-  color: white;
-  margin-top: 60px;
+	color: white;
+	margin-top: 60px;
 }
 .rights {
-  margin-top: -50px;
-  text-align: center;
-  color: white;
+	margin-top: -50px;
+	text-align: center;
+	color: white;
 }

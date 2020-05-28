@@ -5,13 +5,18 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { environment } from "src/environments/environment";
 import { AngularFireModule } from "@angular/fire";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavbarComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
+    BrowserAnimationsModule,
+    FontAwesomeModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
