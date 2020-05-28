@@ -11,6 +11,9 @@
 	object-fit: cover;
 	padding: 10px;
 }
+img {
+	max-width: 100%;
+}
 
 #logo {
 	width: 100%;
@@ -21,6 +24,7 @@
 .topnav li {
 	float: right;
 }
+
 .navdiv {
 	background-color: rgb(255, 123, 0);
 	padding: 8px 8px;
@@ -35,17 +39,19 @@
 
 .controle-background {
 	background-image: url("/assets/images/fundo1.png");
-  background-size: contain;
-  background-position: unset;
-  background-repeat: round;
-  height: 100vh;
-  max-height: 854px;
-  display: block;
-  img.alex-topo {
-    height: 93vh;
-    max-height: 814px;
-  }
+	background-size: contain;
+	background-position: unset;
+	background-repeat: round;
+	height: 100vh;
+	max-height: 854px;
+	display: block;
+	overflow: hidden;
+	img.alex-topo {
+		height: 93vh;
+		max-height: 814px;
+	}
 }
+
 #links-header {
 	width: 100%;
 	list-style-type: none;
@@ -53,7 +59,7 @@
 	padding: 10px;
 	padding-right: 0;
 	overflow: hidden;
-	background-color: rgb(255, 255, 255);
+	// background-color:;
 	li {
 		margin-top: 10px;
 		float: right;
@@ -119,84 +125,71 @@ li a:hover {
 	width: 585px;
 }
 .biografia {
+	overflow: hidden;
 	h1 {
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 55px;
 		font-weight: bold;
 		color: rgb(45, 7, 105);
-		margin-left: 00px;
-		float: left;
-		margin-top: -525px;
+		// margin-left: 00px;
+		// float: left;
+		// margin-top: -525px;
 	}
 	p {
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 25px;
 		color: grey;
-		margin-left: 00px;
-		float: left;
-		margin-top: -450px;
+		// margin-left: 00px;
+		// float: left;
+		// margin-top: -450px;
+	}
+	.familia {
+		overflow: hidden;
+	}
+	.leia {
+		margin-top: 50px;
 	}
 }
-.biografia .familia {
-	margin-left: 400px;
-	margin-bottom: -30px;
-	width: 900px;
-}
-.leia {
-	margin-top: -300px;
-	margin-left: 275px;
-}
-// .row {
-// 	float: left;
-// }
-.rowimage,
-#emenda {
-	margin-left: -290px;
-	object-fit: cover;
-	width: 55px;
-}
-.rowimage {
-	position: relative;
-	margin-left: -23px;
-	height: 283px;
-}
-.rowimage1 {
-	position: relative;
-	margin-left: -24px;
-	width: 553px;
-}
+#atuacao {
+	background-color: rgb(60, 35, 109);
+	text-align: center;
+	.roxo {
+		background-color: rgb(60, 35, 109);
+	}
+	.laranja {
+		background-color: rgb(255, 123, 0);
+	}
+	.laranja,
+	.roxo {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		align-self: center;
+	}
+	h2 {
+		font-family: Helvetica;
+		color: white;
+		font-size: 20px;
+	}
 
-.rowicone1 {
-	position: absolute;
-	margin-top: -250px;
-	margin-left: 75px;
-	float: center;
+	.atuacoes {
+		align-self: center;
+		min-width: 250px;
+		min-height: 250px;
+		display: grid;
+		align-items: center;
+
+		margin: 0 auto;
+		.logo-crt {
+			margin: 0 auto;
+			max-width: 100px;
+		}
+	}
 }
-.rowicone2 {
-	position: absolute;
-	margin-top: -250px;
-	margin-left: 75px;
-	text-align: justify;
-}
-.rowicone3 {
-	position: absolute;
-	margin-top: -250px;
-	margin-left: 75px;
-}
-h2 {
-	font-family: Helvetica;
-	color: white;
-	margin-top: -100px;
-	margin-left: 13%;
-	position: absolute;
-	font-size: 20px;
-}
-.podcast {
-	margin-left: 250px;
-	margin-bottom: -500px;
-}
-.notebook {
-	margin-left: 500px;
+#podcasts {
+	overflow: hidden;
+	padding: 20px;
 }
 .barra1 {
 	background-color: rgb(255, 123, 0);
@@ -288,3 +281,45 @@ h2 {
 	text-align: center;
 	color: white;
 }
+
+@media only screen and (min-width: 1282px) {
+	.controle-background {
+		background-repeat: round;
+	}
+}
+@media only screen and (max-width: 1281px) {
+	.controle-background {
+		background-repeat: no-repeat;
+		height: 100vh;
+		max-height: 554px;
+		min-height: 450px;
+		width: 100%;
+		img.alex-topo {
+			height: 93vh;
+			max-height: 514px;
+		}
+		img.alex-hash {
+			max-height: 514px;
+			max-width: 57vh;
+		}
+	}
+	#links-header {
+		li a h5 {
+			font-size: 20px;
+		}
+	}
+}
+@media only screen and (max-width: 1024px) {
+	#links-header {
+		li a h5 {
+			font-size: 18px;
+		}
+  }
+  .biografia h1 {
+    font-size: 30px;
+  }
+  .biografia p {
+    font-size: 18px;
+  }
+}
+
