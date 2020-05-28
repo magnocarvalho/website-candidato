@@ -147,7 +147,14 @@ li a:hover {
 		overflow: hidden;
 	}
 	.leia {
-		margin-top: 50px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    background-color: rgb(45, 7, 105);
+    color: #fff;
+    padding: 7px 30px;
+    border-radius: 15px;
+    font-size: 30px;
+    font-weight: 600;
 	}
 }
 #atuacao {
@@ -209,7 +216,8 @@ li a:hover {
 }
 .logos {
 	padding-left: 50px;
-	float: center;
+  float: center;
+  padding: 20px;
 }
 .celular {
 	float: right;
