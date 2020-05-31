@@ -170,22 +170,37 @@
       <div class="col-sm-6 col-xl-6">
         <h3 class="title-contato">CONTATO</h3>
         <p class="text-1"><i class="fas fa-phone"></i>(69) 3535-0000</p>
-        <p  class="text-1"><i class="fas fa-phone-square"></i>(69) 98404-6941 / 9977-2070</p>
-        <p  class="text-1"><i class="fas fa-envelope-open-text"></i>contato@alexredano.com.br</p>
+        <p class="text-1"><i class="fas fa-phone-square"></i>(69) 98404-6941 / 9977-2070</p>
+        <p class="text-1"><i class="fas fa-envelope-open-text"></i>contato@alexredano.com.br</p>
       </div>
       <div class="col-sm-6 col-xl-6">
         <form>
-          <div class="form-group">
-            <label for="exampleFormControlInput1">Nome</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+          <div class="row">
+            <div class="form-group  col-sm-6">
+              <label for="exampleFormControlInput1">Nome</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nome">
+            </div>
+            <div class="form-group  col-sm-6">
+              <label for="exampleFormControlSelect1">Cidade</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Cidade">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Cidade</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Cidade">
+          <div class="row">
+            <div class="form-group  col-sm-6">
+              <label for="exampleFormControlSelect1">Telefone</label>
+              <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="Telefone">
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="exampleFormControlSelect1">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+            </div>
           </div>
-          <div class="form-group">
-            <label for="exampleFormControlTextarea1">Mensagem</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Mensagem"></textarea>
+          <div class="row">
+            <div class="form-group col-sm-12">
+              <label for="exampleFormControlTextarea1">Mensagem</label>
+              <textarea class="form-control" type="text" id="exampleFormControlTextarea1" rows="3"
+                placeholder="Mensagem"></textarea>
+            </div>
           </div>
           <div class="form-group">
             <button type="submit" class="btn btn-primary enviar">ENVIAR</button>
