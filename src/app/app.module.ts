@@ -10,9 +10,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
+import { FalaCidadaoComponent } from './fala-cidadao/fala-cidadao.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent],
+  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
