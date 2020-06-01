@@ -1,6 +1,6 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar-mobile">
-  <div class="col-6" >
-    <a class="navbar-brand ">
+  <div class="col-6">
+    <a class="navbar-brand" href="/">
       <img id="logo-mobile-nav" src="/assets/images/logo.png">
     </a>
   </div>
@@ -11,23 +11,23 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngbCollapse]="isMenuCollapsed">
     <ul class="navbar-nav" id="links-header">
-      <li class="nav-item "><a class="nav-link" href="#contato">
-          <h5>Contato</h5>
+      <li class="nav-item"><a class="nav-link" (click)="isMenuCollapsed = true" href="#home">
+          <h5>Home</h5>
         </a></li>
-      <li class="nav-item "><a class="nav-link" href="#enquete">
-          <h5>Enquete</h5>
-        </a></li>
-      <li class="nav-item "><a class="nav-link" href="#fala-cidadao">
-          <h5>Fala Cidadão</h5>
-        </a></li>
-      <li class="nav-item "><a class="nav-link" href="#atuacao">
-          <h5>Atuação</h5>
-        </a></li>
-      <li class="nav-item "><a class="nav-link" href="#biografia">
+      <li class="nav-item "><a class="nav-link" (click)="isMenuCollapsed = true" href="#biografia">
           <h5>Biografia</h5>
         </a></li>
-      <li class="nav-item active"><a class="nav-link" class="active" href="#home">
-          <h5>Home</h5>
+      <li class="nav-item "><a class="nav-link" (click)="isMenuCollapsed = true" href="#atuacao">
+          <h5>Atuação</h5>
+        </a></li>
+      <li class="nav-item "><a class="nav-link" (click)="isMenuCollapsed = true" href="#enquete">
+          <h5>Enquete</h5>
+        </a></li>
+      <li class="nav-item "><a class="nav-link" [routerLink]="'fala-cidadao'" (click)="isMenuCollapsed = true">
+          <h5>Fala Cidadão</h5>
+        </a></li>
+      <li class="nav-item "><a class="nav-link" (click)="isMenuCollapsed = true" href="#contato">
+          <h5>Contato</h5>
         </a></li>
     </ul>
   </div>
@@ -63,7 +63,7 @@
             <li><a href="#enquete">
                 <h5>Enquete</h5>
               </a></li>
-            <li><a href="#fala-cidadao">
+            <li><a [routerLink]="'fala-cidadao'">
                 <h5>Fala Cidadão</h5>
               </a></li>
             <li><a href="#atuacao">
