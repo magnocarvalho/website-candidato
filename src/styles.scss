@@ -20,6 +20,9 @@ html {
 img {
 	max-width: 100%;
 }
+#navbar-mobile{
+  display: none;
+}
 
 #logo {
 	width: 100%;
@@ -58,7 +61,7 @@ img {
 	}
 }
 
-#links-header {
+#header-links #links-header  {
 	width: 100%;
 	list-style-type: none;
 	margin-top: 5px;
@@ -71,7 +74,7 @@ img {
 		float: right;
 		a {
 			display: block;
-			color: white;
+    	color: #111;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
@@ -96,14 +99,18 @@ h5 {
   display: none;
 }
 
+#nav-icons li,
+footer li {
 
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	border-left: 1px solid #fff;
+		float: right;
+		a {
+			display: block;
+    	color:  #fff;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			border-left: 1px solid #fff;
+		}
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -372,6 +379,7 @@ li a:hover {
     font-size: 18px;
   }
 }
+
 @media  only screen and (max-width: 991px) {
   .controle-background {
     background-repeat: no-repeat;
@@ -403,3 +411,23 @@ li a:hover {
     }
 	}
 }
+@media  only screen and (max-width: 600px) {
+  #header-links{
+    display: none;
+  }
+  #navbar-mobile{
+    display: flex;
+
+  }
+  #nav-icons{
+    padding-top: 116px;
+  }
+  #logo-mobile-nav{
+    max-height: 70px;
+
+    margin: 10px;
+  }
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';

@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeComponent } from './home/home.component';
 import { FalaCidadaoComponent } from './fala-cidadao/fala-cidadao.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent],
@@ -20,6 +21,7 @@ import { FalaCidadaoComponent } from './fala-cidadao/fala-cidadao.component';
     AngularFireModule.initializeApp(environment.firebase),
     BrowserAnimationsModule,
     FontAwesomeModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

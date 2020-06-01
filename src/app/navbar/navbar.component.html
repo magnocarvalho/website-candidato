@@ -1,4 +1,38 @@
-<nav class="topnav">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar-mobile">
+  <div class="col-6" >
+    <a class="navbar-brand ">
+      <img id="logo-mobile-nav" src="/assets/images/logo.png">
+    </a>
+  </div>
+  <button (click)="isMenuCollapsed = !isMenuCollapsed" class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown" [ngbCollapse]="isMenuCollapsed">
+    <ul class="navbar-nav" id="links-header">
+      <li class="nav-item "><a class="nav-link" href="#contato">
+          <h5>Contato</h5>
+        </a></li>
+      <li class="nav-item "><a class="nav-link" href="#enquete">
+          <h5>Enquete</h5>
+        </a></li>
+      <li class="nav-item "><a class="nav-link" href="#fala-cidadao">
+          <h5>Fala Cidadão</h5>
+        </a></li>
+      <li class="nav-item "><a class="nav-link" href="#atuacao">
+          <h5>Atuação</h5>
+        </a></li>
+      <li class="nav-item "><a class="nav-link" href="#biografia">
+          <h5>Biografia</h5>
+        </a></li>
+      <li class="nav-item active"><a class="nav-link" class="active" href="#home">
+          <h5>Home</h5>
+        </a></li>
+    </ul>
+  </div>
+</nav>
+<nav class="topnav" id="nav-icons">
   <ul>
     <div class="container">
       <li><a class="medialink" href="#"><img class="media" src="/assets/images/nav/whatsapp.png"></a></li>
@@ -18,10 +52,10 @@
   <div class="container-xl">
     <div class="col-xl-12">
       <div class="row d-sm-inline-flex">
-        <div class="col-sm-3 col-xl-3 ">
+        <div class="col-sm-3 col-xl-3 col-6">
           <img id="logo" src="/assets/images/logo.png">
         </div>
-        <div class="col-sm-9 col-xl-9">
+        <div class="col-sm-9 col-xl-9 col-6">
           <ul id="links-header">
             <li><a href="#contato">
                 <h5>Contato</h5>
@@ -46,4 +80,5 @@
       </div>
     </div>
   </div>
+
 </section>
