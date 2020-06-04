@@ -15,11 +15,16 @@ html {
 	overflow: hidden;
 	background-color: rgb(45, 7, 105);
 	object-fit: cover;
-	padding: 10px;
+  padding: 10px;
 }
 img {
 	max-width: 100%;
 }
+.invalid-feedback-custom{
+  font-size: 11px;
+  color: red;
+}
+
 #navbar-mobile{
   display: none;
 }
