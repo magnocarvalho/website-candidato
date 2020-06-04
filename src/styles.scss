@@ -427,6 +427,64 @@ li a:hover {
 
     margin: 10px;
   }
+  .controle-background {
+    max-height: 264px;
+    min-height: 250px;
+    .altura-10{
+      min-height: 250px;
+    }
+  }
+  #biografia{
+    .titulo-h1, .bibli-p, .btn-leis-mais{
+      margin-left: 10px;
+    }
+  }
+  #fala-cidadao {
+    #fundo-celular{
+    display: none;
+    }
+    .header1{
+      font-size: 25px;
+    }
+    .header2 {
+      font-size: 24px;
+    }
+    img.icone-fala {
+      max-width: 50px;
+    }
+    .text1{
+      font-size: 18px;
+    }
+  }
+  .barra1{
+    padding: 25px;
+    .logos {
+    padding: 7px;
+    }
+  }
+  #atuacao {
+    .atuacoes {
+    min-width: auto;
+    min-height: 150px;
+      .logo-crt{
+
+      max-width: 50px;
+      max-height: 50px;
+
+      }
+    }
+  }
+  #grid-final .redes-socias-div{
+    min-height: 200px;
+  }
+
+  .alex-top-span-mobile{
+    height: 93%;
+    max-height: 264px;
+    min-height: 250px;
+    width: -webkit-fill-available;
+    margin: auto;
+  }
 }
 
 /* Importing Bootstrap SCSS file. */
