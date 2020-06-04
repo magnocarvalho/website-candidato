@@ -13,3 +13,31 @@ ul{
   padding: 25px;
   color: #fff;
 }
+@media  only screen and (max-width: 600px) {
+  ul{
+    list-style-type: none;
+    float: none;
+    padding: 0;
+    text-align: center;
+    list-style:none;
+    margin:0px;
+    li{
+      float: none;
+      text-align: center;
+      display: inline;
+    a{
+      display: inline-block;
+    }
+    }
+  }
+  footer li a {
+    border: none;
+  }
+  footer{
+    span.direitos {
+      text-align: center;
+      align-self: center;
+      max-width: 100%;
+  }
+  }
+}

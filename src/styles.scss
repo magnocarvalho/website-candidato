@@ -363,7 +363,19 @@ li a:hover {
 		li a h5 {
 			font-size: 20px;
 		}
-	}
+  }
+  #atuacao {
+    .atuacoes {
+    min-width: auto;
+    min-height: 200px;
+      .logo-crt{
+
+      max-width: 75px;
+      max-height: 75px;
+
+      }
+    }
+  }
 }
 @media only screen and (max-width: 1024px) {
 
@@ -378,9 +390,24 @@ li a:hover {
   .biografia p {
     font-size: 18px;
   }
+  #atuacao {
+    .atuacoes {
+    min-width: auto;
+    min-height: 200px;
+      .logo-crt{
+
+      max-width: 75px;
+      max-height: 75px;
+
+      }
+    }
+}
 }
 
 @media  only screen and (max-width: 991px) {
+  .direitos{
+      text-align: center;
+  }
   .controle-background {
     background-repeat: no-repeat;
     background-image: url(/assets/images/fundo2.png);
@@ -390,6 +417,7 @@ li a:hover {
     .alex-topo {
       display: none;
     }
+
     .alex-hash{
       display: none;
     }
@@ -409,7 +437,25 @@ li a:hover {
       width: -webkit-fill-available;
       margin: auto;
     }
-	}
+
+
+  }
+  #fala-cidadao
+  #fundo-celular{
+    display: none;
+    }
+  #atuacao {
+      .atuacoes {
+      min-width: auto;
+      min-height: 200px;
+        .logo-crt{
+
+        max-width: 75px;
+        max-height: 75px;
+
+        }
+      }
+  }
 }
 @media  only screen and (max-width: 600px) {
   #header-links{
@@ -441,8 +487,8 @@ li a:hover {
   }
   #fala-cidadao {
     #fundo-celular{
-    display: none;
-    }
+      display: none;
+      }
     .header1{
       font-size: 25px;
     }
@@ -485,6 +531,11 @@ li a:hover {
     width: -webkit-fill-available;
     margin: auto;
   }
+}
+@media  only screen and (max-width: 400px) {
+  #nav-icons{
+  padding-top: 98px;
+}
 }
 
 /* Importing Bootstrap SCSS file. */
