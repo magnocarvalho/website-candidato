@@ -27,7 +27,10 @@ export class HomeComponent implements OnInit {
 				Validators.pattern(this.isValid),
 			]),
 			cidade: new FormControl("", [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
-			mensagem: new FormControl("", [Validators.required, Validators.minLength(3), Validators.maxLength(250)]),
+			descricao: new FormControl("", [Validators.required, Validators.minLength(3), Validators.maxLength(250)]),
+			escritorio: new FormControl(10),
+			tipo: new FormControl(5),
+			dataReivindicacao: new FormControl(new Date()),
 		});
 	}
 
@@ -36,6 +39,8 @@ export class HomeComponent implements OnInit {
 	enviarContato($event) {
 		if (this.profileForm.valid) {
 			console.log(this.profileForm.value);
+			this.loadingBar.start();
+			this.api.createUsuario(this.profileForm.value).finally(() => this.loadingBar.complete());
 		} else {
 			this.profileForm.markAllAsTouched();
 		}

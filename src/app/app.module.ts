@@ -17,6 +17,7 @@ import { NgxMaskModule, IConfig } from "ngx-mask";
 import { LoadingBarModule } from "@ngx-loading-bar/core";
 import { CommonModule } from '@angular/common';
 import { AngularFireDatabaseModule } from "@angular/fire/database";
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent],
   imports: [
@@ -24,6 +25,7 @@ import { AngularFireDatabaseModule } from "@angular/fire/database";
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     LoadingBarModule,
+    HttpClientModule,
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
     FontAwesomeModule,

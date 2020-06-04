@@ -218,7 +218,7 @@
             <div class="form-group  col-sm-6">
               <label for="form-tel">Telefone</label>
               <input required type="tel"  [pattern]="isValid" class="form-control" id="form-tel" placeholder="Telefone"
-              mask="(00)00000-0000" formControlName="telefone" [ngClass]="{'is-invalid': profileForm.get('telefone').invalid && profileForm.get('telefone').touched}">
+              mask="(00)0000-0000 || (00)00000-0000" formControlName="telefone" [ngClass]="{'is-invalid': profileForm.get('telefone').invalid && profileForm.get('telefone').touched}">
               <div class="invalid-feedback-custom"
                 *ngIf="profileForm.get('telefone').invalid && profileForm.get('telefone').touched" >
                 Telefone inválido!
@@ -238,9 +238,9 @@
             <div class="form-group col-sm-12 col-12">
               <label for="form-message">Mensagem</label>
               <textarea required class="form-control" type="text" id="form-message" rows="3" placeholder="Mensagem"
-                formControlName="mensagem" [ngClass]="{'is-invalid': profileForm.get('mensagem').invalid && profileForm.get('mensagem').touched}"></textarea>
+                formControlName="descricao" [ngClass]="{'is-invalid': profileForm.get('descricao').invalid && profileForm.get('descricao').touched}"></textarea>
               <div class="invalid-feedback-custom"
-                *ngIf="profileForm.get('mensagem').invalid && profileForm.get('mensagem').touched">
+                *ngIf="profileForm.get('descricao').invalid && profileForm.get('descricao').touched">
                 Mensagem inválida!
               </div>
             </div>
