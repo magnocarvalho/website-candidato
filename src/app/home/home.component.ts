@@ -40,7 +40,12 @@ export class HomeComponent implements OnInit {
 		if (this.profileForm.valid) {
 			console.log(this.profileForm.value);
 			this.loadingBar.start();
-			this.api.createUsuario(this.profileForm.value).finally(() => this.loadingBar.complete());
+			this.api
+				.createUsuario(this.profileForm.value)
+				.then((res) => {
+					this.profileForm.disable();
+				})
+				.finally(() => this.loadingBar.complete());
 		} else {
 			this.profileForm.markAllAsTouched();
 		}
