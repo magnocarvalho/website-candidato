@@ -19,8 +19,9 @@ import { CommonModule } from '@angular/common';
 import { AngularFireDatabaseModule } from "@angular/fire/database";
 import { HttpClientModule } from '@angular/common/http';
 import { BiografiaComponent } from './biografia/biografia.component';
+import { ContatoComponent } from './contato/contato.component';
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent, BiografiaComponent],
+  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent, BiografiaComponent, ContatoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

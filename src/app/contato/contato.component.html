@@ -1,0 +1,76 @@
+<section class="contato" id="contato">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="barra2"></div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-xl-6 col-12">
+        <h3 class="title-contato">CONTATO</h3>
+        <p class="text-1"><i class="fas fa-phone"></i>(69) 3535-0000</p>
+        <p class="text-1"><i class="fas fa-phone-square"></i>(69) 98404-6941 / 9977-2070</p>
+        <p class="text-1"><i class="fas fa-envelope-open-text"></i>contato@alexredano.com.br</p>
+      </div>
+      <div class="col-sm-12 col-xl-6 col-12">
+        <form [formGroup]="profileForm" class="needs-validation" novalidate>
+          <div class="row">
+            <div class="form-group  col-sm-6">
+              <label for="form-name">Nome</label>
+              <input required type="text" [ngClass]="{'is-invalid': profileForm.get('nome').invalid && profileForm.get('nome').touched}" class="form-control" id="form-name" placeholder="Nome" formControlName="nome">
+              <div class="invalid-feedback-custom"
+                *ngIf="profileForm.get('nome').invalid && profileForm.get('nome').touched">
+                Nome inválido!
+              </div>
+            </div>
+            <div class="form-group  col-sm-6">
+              <label for="form-cidade">Cidade</label>
+              <input required type="text" class="form-control" id="form-cidade" placeholder="Cidade"
+                aria-describedby="inputGroupPrepend" formControlName="cidade" [ngClass]="{'is-invalid': profileForm.get('cidade').invalid && profileForm.get('cidade').touched}">
+              <div class="invalid-feedback-custom"
+                *ngIf="profileForm.get('cidade').invalid && profileForm.get('cidade').touched">
+                Cidade inválida!
+              </div>
+
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group  col-sm-6">
+              <label for="form-tel">Telefone</label>
+              <input required type="tel"  [pattern]="isValid" class="form-control" id="form-tel" placeholder="Telefone"
+              mask="(00)0000-0000 || (00)00000-0000" formControlName="telefone" [ngClass]="{'is-invalid': profileForm.get('telefone').invalid && profileForm.get('telefone').touched}">
+              <div class="invalid-feedback-custom"
+                *ngIf="profileForm.get('telefone').invalid && profileForm.get('telefone').touched" >
+                Telefone inválido!
+              </div>
+            </div>
+            <div class="form-group col-sm-6">
+              <label for="form-mail">Email</label>
+              <input required type="email" aria-describedby="emailHelp" class="form-control" id="form-mail"
+                placeholder="Email" formControlName="email" [ngClass]="{'is-invalid': profileForm.get('email').invalid && profileForm.get('email').touched}">
+              <div class="invalid-feedback-custom"
+                *ngIf="profileForm.get('email').invalid && profileForm.get('email').touched">
+                E-mail inválido!
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-12 col-12">
+              <label for="form-message">Mensagem</label>
+              <textarea required class="form-control" type="text" id="form-message" rows="3" placeholder="Mensagem"
+                formControlName="descricao" [ngClass]="{'is-invalid': profileForm.get('descricao').invalid && profileForm.get('descricao').touched}"></textarea>
+              <div class="invalid-feedback-custom"
+                *ngIf="profileForm.get('descricao').invalid && profileForm.get('descricao').touched">
+                Mensagem inválida!
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary enviar" (click)="enviarContato($event)">ENVIAR</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
