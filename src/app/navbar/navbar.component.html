@@ -54,17 +54,26 @@
 <nav class="topnav" id="nav-icons">
 	<ul>
 		<div class="container">
-			<li>
-				<a class="medialink" href="#"><img class="media" src="/assets/images/nav/whatsapp.png" /></a>
+			<li *ngIf="api.site.redes_social.whatsapp">
+				<a
+					class="medialink"
+					target="_blank"
+					[href]="'https://api.whatsapp.com/send?phone=55' + api.site.redes_social.whatsapp"
+					><img class="media" src="/assets/images/nav/whatsapp.png"
+				/></a>
 			</li>
-			<li>
-				<a class="medialink" href="#"><img class="media" src="/assets/images/nav/instagram.png" /></a>
+			<li *ngIf="api.site.redes_social.instagram">
+				<a class="medialink" target="_blank" [href]="api.site.redes_social.instagram"
+					><img class="media" src="/assets/images/nav/instagram.png"
+				/></a>
 			</li>
-			<li>
-				<a class="medialink" href="#"><img class="media" src="/assets/images/nav/twitter.png" /></a>
+			<li *ngIf="api.site.redes_social.twitter">
+				<a class="medialink" target="_blank" [href]="api.site.redes_social.twitter"
+					><img class="media" src="/assets/images/nav/twitter.png"
+				/></a>
 			</li>
-			<li>
-				<a class="medialink" [href]="api.site.redes_social.capa_facebook" style="border: none;"
+			<li *ngIf="api.site.redes_social.facebook">
+				<a class="medialink" target="_blank" [href]="api.site.redes_social.facebook" style="border: none;"
 					><img class="media" src="/assets/images/nav/facebook.png"
 				/></a>
 			</li>
