@@ -18,8 +18,9 @@ import { LoadingBarModule } from "@ngx-loading-bar/core";
 import { CommonModule } from '@angular/common';
 import { AngularFireDatabaseModule } from "@angular/fire/database";
 import { HttpClientModule } from '@angular/common/http';
+import { BiografiaComponent } from './biografia/biografia.component';
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent],
+  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent, BiografiaComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

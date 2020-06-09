@@ -1,10 +1,7 @@
-
-
 /* You can add global styles to this file, and also import other style files */
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
-
 
 .topnav ul {
 	list-style-type: none;
@@ -15,18 +12,18 @@ html {
 	overflow: hidden;
 	background-color: rgb(45, 7, 105);
 	object-fit: cover;
-  padding: 10px;
+	padding: 10px;
 }
 img {
 	max-width: 100%;
 }
-.invalid-feedback-custom{
-  font-size: 11px;
-  color: red;
+.invalid-feedback-custom {
+	font-size: 11px;
+	color: red;
 }
 
-#navbar-mobile{
-  display: none;
+#navbar-mobile {
+	display: none;
 }
 
 #logo {
@@ -66,7 +63,7 @@ img {
 	}
 }
 
-#header-links #links-header  {
+#header-links #links-header {
 	width: 100%;
 	list-style-type: none;
 	margin-top: 5px;
@@ -79,7 +76,7 @@ img {
 		float: right;
 		a {
 			display: block;
-    	color: #111;
+			color: #111;
 			text-align: center;
 			padding: 14px 16px;
 			text-decoration: none;
@@ -99,23 +96,21 @@ h5 {
 	border-left: 3px wheat;
 }
 
-
-.alex-hash-mobile{
-  display: none;
+.alex-hash-mobile {
+	display: none;
 }
 
 #nav-icons li,
 footer li {
-
-		float: right;
-		a {
-			display: block;
-    	color:  #fff;
-			text-align: center;
-			padding: 14px 16px;
-			text-decoration: none;
-			border-left: 1px solid #fff;
-		}
+	float: right;
+	a {
+		display: block;
+		color: #fff;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+		border-left: 1px solid #fff;
+	}
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -155,26 +150,24 @@ li a:hover {
 		font-size: 55px;
 		font-weight: bold;
 		color: rgb(45, 7, 105);
-
 	}
 	p {
 		font-family: Arial, Helvetica, sans-serif;
 		font-size: 25px;
 		color: grey;
-
 	}
 	.familia {
 		overflow: hidden;
 	}
 	.leia {
-    margin-top: 50px;
-    margin-bottom: 25px;
-    background-color: rgb(45, 7, 105);
-    color: #fff;
-    padding: 7px 30px;
-    border-radius: 15px;
-    font-size: 30px;
-    font-weight: 600;
+		margin-top: 50px;
+		margin-bottom: 25px;
+		background-color: rgb(45, 7, 105);
+		color: #fff;
+		padding: 7px 30px;
+		border-radius: 15px;
+		font-size: 30px;
+		font-weight: 600;
 	}
 }
 #atuacao {
@@ -228,129 +221,124 @@ li a:hover {
 .barra2 {
 	padding: 35px;
 	background-color: rgb(45, 7, 105);
-  margin-left: 60%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  width: -webkit-fill-available;
-  border-radius: 90px 00px 00px 90px;
+	margin-left: 60%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: -webkit-fill-available;
+	border-radius: 90px 00px 00px 90px;
 }
 .barra1 #logo-bar {
 	margin-top: -5px;
 }
 .logos {
 	padding-left: 50px;
-  float: center;
-  padding: 20px;
+	float: center;
+	padding: 20px;
 }
 #fala-cidadao {
-  #fundo-celular {
-    background-image:  url("/assets/images/fundo-celular.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: block;
-    text-align: center;
-    vertical-align: middle;
-    margin: auto 0;
-    padding-top: 30px;
-  }
-  .header1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
-    font-weight: 500;
-    color: rgb(45, 7, 105);
-  }
-  .header2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 55px;
-    font-weight: 500;
-    color: rgb(255, 123, 0);
+	#fundo-celular {
+		background-image: url("/assets/images/fundo-celular.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		display: block;
+		text-align: center;
+		vertical-align: middle;
+		margin: auto 0;
+		padding-top: 30px;
+	}
+	.header1 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 60px;
+		font-weight: 500;
+		color: rgb(45, 7, 105);
+	}
+	.header2 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 55px;
+		font-weight: 500;
+		color: rgb(255, 123, 0);
+	}
+	.text1 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 20px;
+		color: black;
+	}
 
-  }
-  .text1 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: black;
-  }
-
-  .btn.clique-aqui{
-    text-align: center;
-    background-color: rgb(45, 7, 105);
-    color: #fff;
-    padding: 7px 10px;
-    border-radius: 5px;
-    font-size: 20px;
-    font-weight:400;
-  }
+	.btn.clique-aqui {
+		text-align: center;
+		background-color: rgb(45, 7, 105);
+		color: #fff;
+		padding: 7px 10px;
+		border-radius: 5px;
+		font-size: 20px;
+		font-weight: 400;
+	}
 }
-#grid-final{
-  background-color: rgb(60, 35, 109);
-  .redes-socias-div{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    align-self: center;
-    background-image: url(/assets/images/placeholder.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.6;
-    background-size: cover;
-    background-blend-mode: multiply;
+#grid-final {
+	background-color: rgb(60, 35, 109);
+	.redes-socias-div {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		align-self: center;
+		background-image: url(/assets/images/placeholder.png);
+		background-repeat: no-repeat;
+		background-position: center;
+		opacity: 0.6;
+		background-size: cover;
+		background-blend-mode: multiply;
 
-    min-height: 285px;
-    float: left;
-    text-align: center;
+		min-height: 285px;
+		float: left;
+		text-align: center;
 
-    .gridimage{
-      max-width: 100px;
-      margin: 0 auto;
-
-    }
-
-  }
-  .facebook{
-    background-color: #4c64eb;
-  }
-  .instagram{
-    background-color: #e47143;
-  }
-  .twitter{
-    background-color: #2a90f0;
-  }
-  .youtube{
-    background-color: #dd2b2b;
-  }
+		.gridimage {
+			max-width: 100px;
+			margin: 0 auto;
+		}
+	}
+	.facebook {
+		background-color: #4c64eb;
+	}
+	.instagram {
+		background-color: #e47143;
+	}
+	.twitter {
+		background-color: #2a90f0;
+	}
+	.youtube {
+		background-color: #dd2b2b;
+	}
 }
 #contato {
-  .title-contato{
-    color:  rgb(45, 7, 105);
-    font-size: 30px;
-    margin-bottom: 25px;
-  }
-  .text-1{
-    font-size: 20px;
-  }
-  .enviar{
-    float: right;
-    text-align: right;
-    background-color:  rgb(45, 7, 105);
-    border-color: rgb(45, 7, 105);
-    margin-bottom: 25px;
-  }
+	.title-contato {
+		color: rgb(45, 7, 105);
+		font-size: 30px;
+		margin-bottom: 25px;
+	}
+	.text-1 {
+		font-size: 20px;
+	}
+	.enviar {
+		float: right;
+		text-align: right;
+		background-color: rgb(45, 7, 105);
+		border-color: rgb(45, 7, 105);
+		margin-bottom: 25px;
+	}
 }
-
 
 @media only screen and (min-width: 1282px) {
 	.controle-background {
-
 		background-repeat: round;
 	}
 }
 @media only screen and (max-width: 1281px) {
 	.controle-background {
-    background-repeat: no-repeat;
-    background-size: cover;
+		background-repeat: no-repeat;
+		background-size: cover;
 		height: 100%;
 		max-height: 554px;
 		min-height: 450px;
@@ -368,180 +356,169 @@ li a:hover {
 		li a h5 {
 			font-size: 20px;
 		}
-  }
-  #atuacao {
-    .atuacoes {
-    min-width: auto;
-    min-height: 200px;
-      .logo-crt{
-
-      max-width: 75px;
-      max-height: 75px;
-
-      }
-    }
-  }
+	}
+	#atuacao {
+		.atuacoes {
+			min-width: auto;
+			min-height: 200px;
+			.logo-crt {
+				max-width: 75px;
+				max-height: 75px;
+			}
+		}
+	}
 }
 @media only screen and (max-width: 1024px) {
-
 	#links-header {
 		li a h5 {
 			font-size: 18px;
 		}
-  }
-  .biografia h1 {
-    font-size: 30px;
-  }
-  .biografia p {
-    font-size: 18px;
-  }
-  #atuacao {
-    .atuacoes {
-    min-width: auto;
-    min-height: 200px;
-      .logo-crt{
-
-      max-width: 75px;
-      max-height: 75px;
-
-      }
-    }
-}
+	}
+	.biografia h1 {
+		font-size: 30px;
+	}
+	.biografia p {
+		font-size: 18px;
+	}
+	#atuacao {
+		.atuacoes {
+			min-width: auto;
+			min-height: 200px;
+			.logo-crt {
+				max-width: 75px;
+				max-height: 75px;
+			}
+		}
+	}
 }
 
-@media  only screen and (max-width: 991px) {
-  .direitos{
-      text-align: center;
-  }
-  .controle-background {
-    background-repeat: no-repeat;
-    background-image: url(/assets/images/fundo2.png);
-    background-size: cover;
-    background-position: top;
-    background-origin: content-box;
-    .alex-topo {
-      display: none;
-    }
+@media only screen and (max-width: 991px) {
+	.direitos {
+		text-align: center;
+	}
+	.controle-background {
+		background-repeat: no-repeat;
+		background-image: url(/assets/images/fundo2.png);
+		background-size: cover;
+		background-position: top;
+		background-origin: content-box;
+		.alex-topo {
+			display: none;
+		}
 
-    .alex-hash{
-      display: none;
-    }
-    .alex-hash-mobile{
-      display: block;
-      padding-right: 10vw;
-      padding-left: 50vw;
-      align-self: center;
-    }
-    .altura-10{
-      min-height: 450px;
-    }
-    .alex-top-span-mobile{
-      height: 93%;
-      max-height: 514px;
-      min-height: 450px;
-      width: -webkit-fill-available;
-      margin: auto;
-    }
-
-
-  }
-  #fala-cidadao
-  #fundo-celular{
-    display: none;
-    }
-  #atuacao {
-      .atuacoes {
-      min-width: auto;
-      min-height: 200px;
-        .logo-crt{
-
-        max-width: 75px;
-        max-height: 75px;
-
-        }
-      }
-  }
+		.alex-hash {
+			display: none;
+		}
+		.alex-hash-mobile {
+			display: block;
+			padding-right: 10vw;
+			padding-left: 50vw;
+			align-self: center;
+		}
+		.altura-10 {
+			min-height: 450px;
+		}
+		.alex-top-span-mobile {
+			height: 93%;
+			max-height: 514px;
+			min-height: 450px;
+			width: -webkit-fill-available;
+			margin: auto;
+		}
+	}
+	#fala-cidadao #fundo-celular {
+		display: none;
+	}
+	#atuacao {
+		.atuacoes {
+			min-width: auto;
+			min-height: 200px;
+			.logo-crt {
+				max-width: 75px;
+				max-height: 75px;
+			}
+		}
+	}
 }
-@media  only screen and (max-width: 600px) {
-  #header-links{
-    display: none;
-  }
-  #navbar-mobile{
-    display: flex;
+@media only screen and (max-width: 600px) {
+	#header-links {
+		display: none;
+	}
+	#navbar-mobile {
+		display: flex;
+	}
+	#nav-icons {
+		padding-top: 116px;
+	}
+	#logo-mobile-nav {
+		max-height: 70px;
 
-  }
-  #nav-icons{
-    padding-top: 116px;
-  }
-  #logo-mobile-nav{
-    max-height: 70px;
+		margin: 10px;
+	}
+	.controle-background {
+		max-height: 264px;
+		min-height: 250px;
+		.altura-10 {
+			min-height: 250px;
+		}
+	}
+	#biografia {
+		.titulo-h1,
+		.bibli-p,
+		.btn-leis-mais {
+			margin-left: 10px;
+		}
+	}
+	#fala-cidadao {
+		#fundo-celular {
+			display: none;
+		}
+		.header1 {
+			font-size: 25px;
+		}
+		.header2 {
+			font-size: 24px;
+		}
+		img.icone-fala {
+			max-width: 50px;
+		}
+		.text1 {
+			font-size: 18px;
+		}
+	}
+	.barra1 {
+		padding: 25px;
+		.logos {
+			padding: 7px;
+		}
+	}
+	#atuacao {
+		.atuacoes {
+			min-width: auto;
+			min-height: 150px;
+			.logo-crt {
+				max-width: 50px;
+				max-height: 50px;
+			}
+		}
+	}
+	#grid-final .redes-socias-div {
+		min-height: 200px;
+	}
 
-    margin: 10px;
-  }
-  .controle-background {
-    max-height: 264px;
-    min-height: 250px;
-    .altura-10{
-      min-height: 250px;
-    }
-  }
-  #biografia{
-    .titulo-h1, .bibli-p, .btn-leis-mais{
-      margin-left: 10px;
-    }
-  }
-  #fala-cidadao {
-    #fundo-celular{
-      display: none;
-      }
-    .header1{
-      font-size: 25px;
-    }
-    .header2 {
-      font-size: 24px;
-    }
-    img.icone-fala {
-      max-width: 50px;
-    }
-    .text1{
-      font-size: 18px;
-    }
-  }
-  .barra1{
-    padding: 25px;
-    .logos {
-    padding: 7px;
-    }
-  }
-  #atuacao {
-    .atuacoes {
-    min-width: auto;
-    min-height: 150px;
-      .logo-crt{
-
-      max-width: 50px;
-      max-height: 50px;
-
-      }
-    }
-  }
-  #grid-final .redes-socias-div{
-    min-height: 200px;
-  }
-
-  .alex-top-span-mobile{
-    height: 93%;
-    max-height: 264px;
-    min-height: 250px;
-    width: -webkit-fill-available;
-    margin: auto;
-  }
+	.alex-top-span-mobile {
+		height: 93%;
+		max-height: 264px;
+		min-height: 250px;
+		width: -webkit-fill-available;
+		margin: auto;
+	}
 }
-@media  only screen and (max-width: 400px) {
-  #nav-icons{
-  padding-top: 98px;
-}
+@media only screen and (max-width: 400px) {
+	#nav-icons {
+		padding-top: 98px;
+	}
 }
 
 /* Importing Bootstrap SCSS file. */
-@import '~bootstrap/scss/bootstrap';
+@import "~bootstrap/scss/bootstrap";

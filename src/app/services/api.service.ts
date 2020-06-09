@@ -3,20 +3,30 @@ import { AngularFirestore } from "@angular/fire/firestore";
 import { LoadingBarService } from "@ngx-loading-bar/core";
 import { HttpClient, HttpHeaders, HttpErrorResponse } from "@angular/common/http";
 import { throwError, Observable } from "rxjs";
+import { Site } from "../model/site";
 
 @Injectable({
 	providedIn: "root",
 })
 export class ApiService {
+	public url = "http://dev.gerenciemeugabinete.com.br/operacao/reivindicacao";
+	public httpOptions = {
+		headers: new HttpHeaders({ "Content-Type": "application/json" }),
+	};
+	public site: Site = new Site();
 	constructor(
 		private firestore: AngularFirestore,
 		private loadingBar: LoadingBarService,
 		private httpClient: HttpClient
-	) {}
-	url = "http://dev.gerenciemeugabinete.com.br/operacao/reivindicacao";
-	httpOptions = {
-		headers: new HttpHeaders({ "Content-Type": "application/json" }),
-	};
+	) {
+		this.getAlexPager().subscribe((data) => {
+			this.site = data.payload.data() as Site;
+		});
+	}
+	getAlexPager() {
+		return this.firestore.doc("landpages/" + "LzmwlMqI4fSoNtgcUrfm").snapshotChanges();
+	}
+
 	createUsuario(contato) {
 		this.saveCar(contato).subscribe(
 			(res) => {
