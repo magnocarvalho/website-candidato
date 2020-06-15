@@ -23,6 +23,7 @@ import { ContatoComponent } from "./contato/contato.component";
 import { FormContatoComponent } from "./form-contato/form-contato.component";
 import { NgxLoadingModule, ngxLoadingAnimationTypes } from "ngx-loading";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -56,7 +57,8 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 			secondaryColour: "#ffffff",
 			tertiaryColour: "#ffffff",
 		}),
-		MatProgressSpinnerModule,
+    MatProgressSpinnerModule,
+    MatDialogModule
 	],
 	providers: [],
 	bootstrap: [AppComponent],
