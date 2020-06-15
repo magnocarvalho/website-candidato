@@ -1,39 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- Primary Meta Tags -->
+		<title>Alex Redano</title>
+		<base href="/" />
+		<meta name="title" content="Alex Redano" />
+		<meta
+			name="description"
+			content="Alex Redano é um homem simples e trabalhador, como muitos outros cidadãos que vivem, trabalham, e muito amam está nossa Rondônia!"
+		/>
 
-<head>
-  <meta charset="utf-8">
-  <!-- Primary Meta Tags -->
-  <title>Alex Redano</title>
-  <base href="/">
-  <meta name="title" content="Alex Redano">
-  <meta name="description"
-    content="Alex Redano é um homem simples e trabalhador, como muitos outros cidadãos que vivem, trabalham, e muito amam está nossa Rondônia!">
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://metatags.io/" />
+		<meta property="og:title" content="Alex Redano" />
+		<meta
+			property="og:description"
+			content="Alex Redano é um homem simples e trabalhador, como muitos outros cidadãos que vivem, trabalham, e muito amam está nossa Rondônia!"
+		/>
+		<meta property="og:image" content="/assets/images/logo.png" />
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://metatags.io/">
-  <meta property="og:title" content="Alex Redano">
-  <meta property="og:description"
-    content="Alex Redano é um homem simples e trabalhador, como muitos outros cidadãos que vivem, trabalham, e muito amam está nossa Rondônia!">
-  <meta property="og:image" content="/assets/images/logo.png">
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://metatags.io/" />
+		<meta property="twitter:title" content="Alex Redano" />
+		<meta
+			property="twitter:description"
+			content="Alex Redano é um homem simples e trabalhador, como muitos outros cidadãos que vivem, trabalham, e muito amam está nossa Rondônia!"
+		/>
+		<meta property="twitter:image" content="/assets/images/logo.png" />
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://metatags.io/">
-  <meta property="twitter:title" content="Alex Redano">
-  <meta property="twitter:description"
-    content="Alex Redano é um homem simples e trabalhador, como muitos outros cidadãos que vivem, trabalham, e muito amam está nossa Rondônia!">
-  <meta property="twitter:image" content="/assets/images/logo.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="favicon.png" />
 
+		<!-- Facebook Pixel Code -->
+		<script>
+			!(function (f, b, e, v, n, t, s) {
+				if (f.fbq) return;
+				n = f.fbq = function () {
+					n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+				};
+				if (!f._fbq) f._fbq = n;
+				n.push = n;
+				n.loaded = !0;
+				n.version = "2.0";
+				n.queue = [];
+				t = b.createElement(e);
+				t.async = !0;
+				t.src = v;
+				s = b.getElementsByTagName(e)[0];
+				s.parentNode.insertBefore(t, s);
+			})(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
+			fbq("init", "3059436524171140");
+			fbq("track", "PageView");
+		</script>
+		<noscript
+			><img
+				height="1"
+				width="1"
+				style="display: none;"
+				src="https://www.facebook.com/tr?id=3059436524171140&ev=PageView&noscript=1"
+		/></noscript>
+		<!-- End Facebook Pixel Code -->
+	</head>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.png">
-
-</head>
-
-<body>
-  <app-root></app-root>
-</body>
-
+	<body>
+		<app-root></app-root>
+	</body>
 </html>

@@ -20,8 +20,9 @@ import { AngularFireDatabaseModule } from "@angular/fire/database";
 import { HttpClientModule } from '@angular/common/http';
 import { BiografiaComponent } from './biografia/biografia.component';
 import { ContatoComponent } from './contato/contato.component';
+import { FormContatoComponent } from './form-contato/form-contato.component';
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent, BiografiaComponent, ContatoComponent],
+  declarations: [AppComponent, NavbarComponent, FooterComponent, HomeComponent, FalaCidadaoComponent, BiografiaComponent, ContatoComponent, FormContatoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
