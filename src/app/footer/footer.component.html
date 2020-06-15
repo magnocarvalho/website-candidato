@@ -1,65 +1,87 @@
 <section id="footer-background">
-  <footer class="footer">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-sm-3 col-xl-3 col-12">
-          <img id="logo-footer-logo" src="/assets/images/logo-branca.png">
-        </div>
-        <div class="col-sm-9 col-xl-9 col-12">
-          <ul id="links-header">
-            <li><a href="#contato">
-                <span>Contato</span>
-              </a></li>
-            <li><a href="#enquete">
-                <span>Enquete</span>
-              </a></li>
-            <li><a [routerLink]="'fala-cidadao'">
-                <span>Fala Cidadão</span>
-              </a></li>
-            <li><a href="#atuacao">
-                <span>Atuação</span>
-              </a></li>
-            <li><a href="#biografia">
-                <span>Biografia</span>
-              </a></li>
-            <li><a class="active" href="#home">
-                <span>Home</span>
-              </a></li>
-          </ul>
+	<footer class="footer">
+		<div class="container">
+			<div class="row align-items-center">
+				<div class="col-sm-3 col-xl-3 col-12">
+					<img id="logo-footer-logo" src="/assets/images/logo-branca.png" />
+				</div>
+				<div class="col-sm-9 col-xl-9 col-12">
+					<ul id="links-header">
+						<li>
+							<a href="#contato">
+								<span>Contato</span>
+							</a>
+						</li>
+						<li>
+							<a href="#enquete">
+								<span>Enquete</span>
+							</a>
+						</li>
+						<li>
+							<a [routerLink]="'fala-cidadao'">
+								<span>Fala Cidadão</span>
+							</a>
+						</li>
+						<li>
+							<a href="#atuacao">
+								<span>Atuação</span>
+							</a>
+						</li>
+						<li>
+							<a href="#biografia">
+								<span>Biografia</span>
+							</a>
+						</li>
+						<li>
+							<a class="active" href="#home">
+								<span>Home</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12">
+					<table class="table">
+						<th></th>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-xl-6 col-12">
+					<div class="direitos">
+						<p class="">
+							2020 Todos os direitos reservados Desenvolvido por
+							<a href="http://poletize.com.br/" target="_blank" rel="noopener noreferrer">Polezite</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-xl-6 col-12">
+					<ul>
+						<li>
+							<a class="medialink" target="_blank" 	[href]="'https://api.whatsapp.com/send?phone=55' + api.site.redes_social.whatsapp"
+								><img class="media" src="/assets/images/nav/whatsapp.png"
+							/></a>
+						</li>
+						<li>
+							<a class="medialink" target="_blank" [href]="api.site.redes_social.instagram"
+								><img class="media" src="/assets/images/nav/instagram.png"
+							/></a>
+						</li>
 
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <table class="table">
-            <th></th>
-          </table>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-xl-6 col-12">
-          <div class="direitos" >
-            <p class="">2020 Todos os direitos reservados Desenvolvido por <a href="http://poletize.com.br/"
-                target="_blank" rel="noopener noreferrer">Polezite</a> </p>
-          </div>
-        </div>
-        <div class="col-sm-6 col-xl-6 col-12 ">
-          <ul>
-            <li><a class="medialink" target="_blank" href="https://www.instagram.com/alex.redano/"><img class="media"
-                  src="/assets/images/nav/whatsapp.png"></a></li>
-            <li><a class="medialink" target="_blank" href="https://www.instagram.com/alex.redano/"><img class="media"
-                  src="/assets/images/nav/instagram.png"></a></li>
-
-            <li><a class="medialink" target="_blank" href="#"><img class="media"
-                  src="/assets/images/nav/twitter.png"></a>
-            </li>
-            <li><a class="medialink" target="_blank" href="https://www.facebook.com/alex.redano/">
-                <img class="media" src="/assets/images/nav/facebook.png">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
+						<li>
+							<a class="medialink" target="_blank" [href]="api.site.redes_social.twitter"
+								><img class="media" src="/assets/images/nav/twitter.png"
+							/></a>
+						</li>
+						<li>
+							<a class="medialink" target="_blank" [href]="api.site.redes_social.facebook">
+								<img class="media" src="/assets/images/nav/facebook.png" />
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 </section>

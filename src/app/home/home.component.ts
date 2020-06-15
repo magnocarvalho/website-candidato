@@ -9,7 +9,7 @@ import { LoadingBarService } from "@ngx-loading-bar/core";
 	styleUrls: ["./home.component.scss"],
 })
 export class HomeComponent implements OnInit {
-	constructor(private api: ApiService, private loadingBar: LoadingBarService) {}
+	constructor(public api: ApiService, private loadingBar: LoadingBarService) {}
 
 	ngOnInit(): void {}
 }
