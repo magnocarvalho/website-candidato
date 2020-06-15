@@ -21,7 +21,7 @@ export class ApiService {
 		private httpClient: HttpClient
 	) {
 		this.getAlexPager().subscribe((data) => {
-			this.site = data.payload.data() as Site;
+      this.site = data.payload.data() as Site;
 			this.loading_ = false;
 		});
 	}
