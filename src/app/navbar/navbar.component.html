@@ -1,7 +1,7 @@
 <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar-mobile">
 	<div class="col-6">
-		<a class="navbar-brand" href="/">
-			<img id="logo-mobile-nav" src="/assets/images/logo.png" />
+		<a class="navbar-brand" href="/" *ngIf="api.site.infos.logo_site">
+			<img id="logo-mobile-nav" [src]="api.site.infos.logo_site" />
 		</a>
 	</div>
 	<button
@@ -88,40 +88,40 @@
 <section class="container-fluid" id="header-links">
 	<div class="container">
 		<div class="col-xl-12">
-			<div class="row d-sm-inline-flex">
-				<div class="col-sm-3 col-xl-3 col-6">
-					<img id="logo" src="/assets/images/logo.png" />
+			<div class="row d-sm-inline-flex" *ngIf="api.site.infos.logo_site">
+				<div class="col-sm-3 col-xl-3 col-6" >
+					<img id="logo" [src]="api.site.infos.logo_site" />
 				</div>
 				<div class="col-sm-9 col-xl-9 col-6">
 					<ul id="links-header">
 						<li>
 							<a href="#contato">
-								<h5>Contato</h5>
+								<h5 class="links-navbar">Contato</h5>
 							</a>
 						</li>
 						<li>
 							<a href="#enquete">
-								<h5>Enquete</h5>
+								<h5 class="links-navbar">Enquete</h5>
 							</a>
 						</li>
 						<li>
 							<a [routerLink]="'fala-cidadao'">
-								<h5>Fala Cidadão</h5>
+								<h5 class="links-navbar">Fala Cidadão</h5>
 							</a>
 						</li>
 						<li>
 							<a href="#atuacao">
-								<h5>Atuação</h5>
+								<h5 class="links-navbar">Atuação</h5>
 							</a>
 						</li>
 						<li>
 							<a href="#biografia">
-								<h5>Biografia</h5>
+								<h5 class="links-navbar">Biografia</h5>
 							</a>
 						</li>
 						<li>
 							<a class="active" href="#home">
-								<h5>Home</h5>
+								<h5 class="links-navbar">Home</h5>
 							</a>
 						</li>
 					</ul>

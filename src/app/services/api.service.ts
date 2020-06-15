@@ -14,6 +14,7 @@ export class ApiService {
 		headers: new HttpHeaders({ "Content-Type": "application/json" }),
 	};
 	public site: Site = new Site();
+	public loading_ = true;
 	constructor(
 		private firestore: AngularFirestore,
 		private loadingBar: LoadingBarService,
@@ -21,6 +22,7 @@ export class ApiService {
 	) {
 		this.getAlexPager().subscribe((data) => {
 			this.site = data.payload.data() as Site;
+			this.loading_ = false;
 		});
 	}
 	getAlexPager() {
