@@ -23,7 +23,8 @@ import { ContatoComponent } from "./contato/contato.component";
 import { FormContatoComponent } from "./form-contato/form-contato.component";
 import { NgxLoadingModule, ngxLoadingAnimationTypes } from "ngx-loading";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
-import { MatDialogModule } from '@angular/material/dialog';
+import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
+import { ModalCidadaoComponent } from './modal-cidadao/modal-cidadao.component';
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -34,10 +35,13 @@ import { MatDialogModule } from '@angular/material/dialog';
 		BiografiaComponent,
 		ContatoComponent,
 		FormContatoComponent,
+		ModalCidadaoComponent,
 	],
 	imports: [
 		BrowserModule,
 		AppRoutingModule,
+		FormsModule,
+		ReactiveFormsModule,
 		AngularFireModule.initializeApp(environment.firebase),
 		LoadingBarModule,
 		HttpClientModule,
@@ -45,8 +49,6 @@ import { MatDialogModule } from '@angular/material/dialog';
 		BrowserAnimationsModule,
 		FontAwesomeModule,
 		NgbModule,
-		FormsModule,
-		ReactiveFormsModule,
 		CommonModule,
 		NgxMaskModule.forRoot(),
 		NgxLoadingModule.forRoot({
@@ -57,10 +59,11 @@ import { MatDialogModule } from '@angular/material/dialog';
 			secondaryColour: "#ffffff",
 			tertiaryColour: "#ffffff",
 		}),
-    MatProgressSpinnerModule,
-    MatDialogModule
+		MatProgressSpinnerModule,
+    MatDialogModule,
+    ReactiveFormsModule
 	],
-	providers: [],
+	providers: [{ provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: false } }],
 	bootstrap: [AppComponent],
 })
 export class AppModule {}

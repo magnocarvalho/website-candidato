@@ -1,5 +1,9 @@
 import { Component, OnInit, Input, Inject } from "@angular/core";
 import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from "@angular/material/dialog";
+import { FormGroup, Validators, FormControl } from "@angular/forms";
+import { ApiService } from "../services/api.service";
+import { LoadingBarService } from "@ngx-loading-bar/core";
+import { ModalCidadaoComponent } from "../modal-cidadao/modal-cidadao.component";
 
 @Component({
 	selector: "app-fala-cidadao",
@@ -11,25 +15,11 @@ export class FalaCidadaoComponent implements OnInit {
 
 	ngOnInit(): void {}
 
-	openDialog() {
-		const dialogRef = this.dialog.open(DialogContentExampleDialog, { data: { tipo: 6 } });
+	openDialog(tipo) {
+		const dialogRef = this.dialog.open(ModalCidadaoComponent, { data: { tipo: tipo } });
 
 		dialogRef.afterClosed().subscribe((result) => {
 			console.log(`Dialog result: ${result}`);
 		});
 	}
-}
-@Component({
-	selector: "dialog-content-example-dialog",
-	templateUrl: "dialog-content-example-dialog.html",
-})
-export class DialogOverviewExampleDialog  {
-  tipo: Number = 5;
-  constructor(
-    public dialogRef: MatDialogRef<DialogOverviewExampleDialog>,
-    @Inject(MAT_DIALOG_DATA) public data: DialogData) {}
-
-  onNoClick(): void {
-    this.dialogRef.close();
-  }
 }
