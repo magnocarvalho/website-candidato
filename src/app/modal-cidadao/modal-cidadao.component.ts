@@ -5,8 +5,8 @@ import { ApiService } from "../services/api.service";
 import { LoadingBarService } from "@ngx-loading-bar/core";
 
 export interface DialogData {
-  tipo: number;
-  title: string;
+	tipo: number;
+	title: string;
 }
 
 @Component({
@@ -34,7 +34,7 @@ export class ModalCidadaoComponent implements OnInit {
 		cidade: new FormControl("", [Validators.required, Validators.minLength(3), Validators.maxLength(50)]),
 		descricao: new FormControl("", [Validators.required, Validators.minLength(3), Validators.maxLength(250)]),
 		escritorio: new FormControl(10),
-		tipo: new FormControl(this.tipo),
+		tipo: new FormControl(),
 		dataReivindicacao: new FormControl(new Date()),
 	});
 	constructor(
@@ -45,6 +45,7 @@ export class ModalCidadaoComponent implements OnInit {
 	) {}
 	ngOnInit(): void {}
 	enviarContato($event) {
+    this.profileForm.get('tipo').setValue(this.data.tipo)
 		if (this.profileForm.valid) {
 			console.log(this.profileForm.value);
 			this.loadingBar.start();
@@ -53,7 +54,10 @@ export class ModalCidadaoComponent implements OnInit {
 				.then((res) => {
 					this.profileForm.disable();
 				})
-				.finally(() => this.loadingBar.complete());
+				.finally(() => {
+					this.loadingBar.complete();
+					this.dialogRef.close();
+				});
 		} else {
 			this.profileForm.markAllAsTouched();
 		}
