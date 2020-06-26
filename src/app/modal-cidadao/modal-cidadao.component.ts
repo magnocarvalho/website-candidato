@@ -5,7 +5,8 @@ import { ApiService } from "../services/api.service";
 import { LoadingBarService } from "@ngx-loading-bar/core";
 
 export interface DialogData {
-	tipo: number;
+  tipo: number;
+  title: string;
 }
 
 @Component({

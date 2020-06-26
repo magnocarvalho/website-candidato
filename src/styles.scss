@@ -1,12 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/scss/bootstrap";
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&family=Montserrat&family=Noto+Sans+JP&family=Open+Sans&display=swap");
 html,
 body {
 	height: 100%;
 }
 body {
 	margin: 0;
-	font-family: Roboto, "Helvetica Neue", sans-serif;
+	font-family: Roboto, "Helvetica Neue", sans-serif!important;
 }
 html {
 	scroll-behavior: smooth;
@@ -168,8 +169,8 @@ footer li {
 /* Change the link color to #111 (black) on hover */
 li a:hover {
 	// background-color: rgb(216, 210, 210, 0.6);
-  // line-height: 1.22;
-  // border-bottom: 1px solid  rgb(216, 210, 210, 0.6);
+	// line-height: 1.22;
+	// border-bottom: 1px solid  rgb(216, 210, 210, 0.6);
 }
 
 .body {
@@ -252,16 +253,17 @@ li a:hover {
 	}
 
 	.atuacoes {
-		align-self: center;
+		align-self: self-end;
 		min-width: 250px;
 		min-height: 250px;
 		display: grid;
-		align-items: center;
+		align-items: self-end;
 
 		margin: 0 auto;
 		.logo-crt {
 			margin: 0 auto;
-			max-width: 100px;
+      max-width: 75px;
+      align-items: self-end;
 		}
 	}
 }
