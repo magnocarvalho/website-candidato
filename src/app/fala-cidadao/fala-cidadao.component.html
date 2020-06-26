@@ -1,41 +1,77 @@
 <section id="fala-cidadao">
 	<div class="container">
 		<div class="row align-items-center">
-			<div class="col-md-4 col-xl-4 col-sm-12 col-12" id="fundo-celular">
-				<img class="fundo-celular" src="/assets/images/celular.png" />
+			<div class="col-md-4 col-xl-4 col-sm-12 col-12" id="">
+				<p>
+					<img id="fala-fundo-celular" class="fala-cidadao fundo-celular" src="/assets/images/icon/redano.png" />
+				</p>
 			</div>
 			<div class="col-md-8 col-xl-7 col-sm-12 col-12">
-				<div class="row align-items-end">
-					<div class="col-sm-9 col-9">
-						<h3 class="header1"><b>FALA</b> CIDADÃO,</h3>
+				<div class="row align-items-center">
+					<div class="col-sm-9 col-10">
+						<h3 class="podemos-te-ajudar">Como podemos te ajudar?</h3>
 					</div>
-					<div class="col-sm-3 col-3">
+					<div class="col-sm-3 col-2">
 						<img class="icone-fala" src="/assets/images/icone-fala.png" />
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-12 col-12">
-						<h3 class="header2">AQUI VOCÊ TEM VOZ!</h3>
-					</div>
-				</div>
+
 				<div class="row botoes-fala-cidadao">
 					<div class="col-sm-4 col-6">
-						<button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(1)">Reclamação</button>
+						<!-- <button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(1)">
+							<img class="icon-btn" src="/assets/images/icon/reclamacao.png" />Reclamação
+            </button> -->
+						<p style="cursor: pointer;">
+							<img
+								class="icon-btn"
+								src="/assets/images/icon/btn-reclamacao.png"
+								(click)="openDialog(1, 'Reclamação')"
+							/>
+						</p>
 					</div>
 					<div class="col-sm-4 col-6">
-						<button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(2)">Elogio</button>
+						<!-- <button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(2)">
+            </button> -->
+						<p style="cursor: pointer;">
+							<img class="icon-btn" src="/assets/images/icon/btn-elogio.png" (click)="openDialog(2, 'Elogio')" />
+						</p>
 					</div>
 					<div class="col-sm-4 col-6">
-						<button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(3)">Sugestão</button>
+						<!-- <button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(3)">
+							<img class="icon-btn" src="/assets/images/icon/sugestao.png" />Sugestão
+            </button> -->
+						<p style="cursor: pointer;">
+							<img class="icon-btn" src="/assets/images/icon/btn-sugestao.png" (click)="openDialog(3, 'Sugestão')" />
+						</p>
 					</div>
 					<div class="col-sm-4 col-6">
-						<button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(4)">Denuncia</button>
+						<!-- <button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(4)">
+							<img class="icon-btn" src="/assets/images/icon/denuncia.png" />Denuncia
+            </button> -->
+						<p style="cursor: pointer;">
+							<img class="icon-btn" src="/assets/images/icon/btn-denuncia.png" (click)="openDialog(4, 'Denúncia')" />
+						</p>
 					</div>
 					<div class="col-sm-4 col-6">
-						<button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(6)">Solicitação</button>
+						<!-- <button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(6)">
+							<img class="icon-btn" src="/assets/images/icon/solicitacao.png" />Solicitação
+            </button> -->
+						<p style="cursor: pointer;">
+							<img
+								class="icon-btn"
+								src="/assets/images/icon/btn-solicitacao.png"
+								(click)="openDialog(6, 'Solicitação')"
+							/>
+						</p>
 					</div>
 					<div class="col-sm-4 col-6">
-						<button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(5)">Contato</button>
+						<p style="cursor: pointer;">
+							<img class="icon-btn" src="/assets/images/icon/btn-contato.png" (click)="openDialog(5, 'Contato')" />
+						</p>
+
+						<!-- <button type="button" name="" id="" class="btn btn-primary ck" (click)="openDialog(5)">
+							<img class="icon-btn" src="/assets/images/icon/contato.png" />Contato
+						</button> -->
 					</div>
 				</div>
 			</div>

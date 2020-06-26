@@ -135,10 +135,10 @@ h5.links-navbar {
 	font-weight: lighter;
 	line-height: 1.22;
 }
-.text-biografia{
-  font-size: 22px;
-  line-height: 1.42;
-  text-align: justify;
+.text-biografia {
+	font-size: 22px;
+	line-height: 1.42;
+	text-align: left;
 }
 
 .media {
@@ -167,8 +167,9 @@ footer li {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-	background-color: rgb(216, 210, 210, 0.6);
-	line-height: 1.22;
+	// background-color: rgb(216, 210, 210, 0.6);
+  // line-height: 1.22;
+  // border-bottom: 1px solid  rgb(216, 210, 210, 0.6);
 }
 
 .body {
@@ -354,8 +355,8 @@ li a:hover {
 		float: left;
 		text-align: center;
 		a {
-      text-align: center;
-      margin: 0 auto;
+			text-align: center;
+			margin: 0 auto;
 			.gridimage {
 				max-width: 100px;
 				margin: 0 auto;
@@ -504,8 +505,18 @@ li a:hover {
 	}
 }
 @media only screen and (max-width: 600px) {
+	#fala-fundo-celular,
 	#header-links {
 		display: none;
+	}
+	#fala-cidadao {
+		h3.podemos-te-ajudar {
+			margin-bottom: 20px;
+			font-size: 25px !important;
+		}
+		img.icone-fala {
+			margin-bottom: 20px;
+		}
 	}
 	#navbar-mobile {
 		display: flex;

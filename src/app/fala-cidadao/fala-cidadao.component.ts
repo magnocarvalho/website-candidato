@@ -15,8 +15,8 @@ export class FalaCidadaoComponent implements OnInit {
 
 	ngOnInit(): void {}
 
-	openDialog(tipo) {
-		const dialogRef = this.dialog.open(ModalCidadaoComponent, { data: { tipo: tipo } });
+	openDialog(tipo, titulo) {
+		const dialogRef = this.dialog.open(ModalCidadaoComponent, { data: { tipo: tipo, title: titulo } });
 
 		dialogRef.afterClosed().subscribe((result) => {
 			console.log(`Dialog result: ${result}`);

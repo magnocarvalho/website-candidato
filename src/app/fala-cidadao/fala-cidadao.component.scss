@@ -1,15 +1,35 @@
-#fala-cidadao{
-  // min-height: 500vh;
-  height: 80vh;
-  padding-top: 50px;
-  max-height: 500px;
-  .botoes-fala-cidadao{
-    button{
-      max-width: 180px;
-      width: 100%;
-      margin-bottom: 20px;
-      text-align: center;
+#fala-cidadao {
+	// min-height: 500vh;
+	// height: 80vh;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	// max-height: 500px;
+	.podemos-te-ajudar {
+		font-size: 38px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 500;
+		color: rgb(45, 7, 105);
+		line-height: 1.22;
+	}
+
+	.botoes-fala-cidadao {
+		button {
+			max-width: 180px;
+			width: 100%;
+			margin-bottom: 20px;
+			text-align: center;
       text-transform: uppercase;
-    }
-  }
+      vertical-align: middle;
+
+			img.icon-btn {
+        text-align: left;
+        vertical-align: middle;
+				width: 20px;
+				/* padding: 0; */
+				margin: 5px;
+				position: relative;
+				float: left;
+			}
+		}
+	}
 }
