@@ -7,7 +7,7 @@ body {
 }
 body {
 	margin: 0;
-	font-family: Roboto, "Helvetica Neue", sans-serif!important;
+	font-family: Roboto, "Helvetica Neue", sans-serif !important;
 }
 html {
 	scroll-behavior: smooth;
@@ -102,7 +102,7 @@ img {
 	display: block;
 	overflow: hidden;
 	img.alex-topo {
-		height: 93%;
+		height: 98vh;
 		max-height: 814px;
 	}
 }
@@ -238,6 +238,9 @@ li a:hover {
 	.laranja {
 		background-color: rgb(255, 123, 0);
 	}
+	.a-link-c {
+		text-align: center;
+	}
 	.laranja,
 	.roxo {
 		width: 100%;
@@ -262,8 +265,8 @@ li a:hover {
 		margin: 0 auto;
 		.logo-crt {
 			margin: 0 auto;
-      max-width: 75px;
-      align-items: self-end;
+			max-width: 75px;
+			align-items: self-end;
 		}
 	}
 }
@@ -503,6 +506,12 @@ li a:hover {
 				max-width: 75px;
 				max-height: 75px;
 			}
+		}
+		.a-link-c {
+			text-align: center;
+		}
+		.a-link-c {
+			margin: 0 auto;
 		}
 	}
 }
