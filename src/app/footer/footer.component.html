@@ -61,7 +61,7 @@
 				</div>
 				<div class="col-sm-3 col-xl-4 col-12">
 					<ul>
-						<li>
+						<li *ngIf="api.site.redes_social.whatsapp">
 							<a
 								class="medialink"
 								target="_blank"
@@ -69,18 +69,18 @@
 								><img class="media" src="/assets/images/nav/whatsapp.png"
 							/></a>
 						</li>
-						<li>
+						<li *ngIf="api.site.redes_social.instagram">
 							<a class="medialink" target="_blank" [href]="api.site.redes_social.instagram"
 								><img class="media" src="/assets/images/nav/instagram.png"
 							/></a>
 						</li>
 
-						<li>
+						<li *ngIf="api.site.redes_social.twitter">
 							<a class="medialink" target="_blank" [href]="api.site.redes_social.twitter"
 								><img class="media" src="/assets/images/nav/twitter.png"
 							/></a>
 						</li>
-						<li>
+						<li *ngIf="api.site.redes_social.facebook">
 							<a class="medialink" target="_blank" [href]="api.site.redes_social.facebook">
 								<img class="media" src="/assets/images/nav/facebook.png" />
 							</a>
