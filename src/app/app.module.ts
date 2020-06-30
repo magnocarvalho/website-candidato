@@ -25,6 +25,7 @@ import { NgxLoadingModule, ngxLoadingAnimationTypes } from "ngx-loading";
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { MatDialogModule, MAT_DIALOG_DEFAULT_OPTIONS } from "@angular/material/dialog";
 import { ModalCidadaoComponent } from './modal-cidadao/modal-cidadao.component';
+import { NgImageSliderModule } from 'ng-image-slider';
 @NgModule({
 	declarations: [
 		AppComponent,
@@ -61,7 +62,8 @@ import { ModalCidadaoComponent } from './modal-cidadao/modal-cidadao.component';
 		}),
 		MatProgressSpinnerModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgImageSliderModule
 	],
 	providers: [{ provide: MAT_DIALOG_DEFAULT_OPTIONS, useValue: { hasBackdrop: false } }],
 	bootstrap: [AppComponent],
